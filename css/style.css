@@ -1,0 +1,61 @@
+/* Основні налаштування кольорів (Dark Mode) [cite: 50] */
+:root {
+    --bg-dark: #0F172A;
+    --card-bg: #1E293B;
+    --accent: #3B82F6;
+    --text-muted: #94A3B8;
+}
+
+body {
+    background-color: var(--bg-dark) !important;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bg-card {
+    background-color: var(--card-bg);
+}
+
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+/* Налаштування кнопок */
+.btn-primary {
+    background-color: var(--accent);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+/* Форми */
+.form-control:focus {
+    background-color: #111827;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+    color: white;
+}
+
+/* Адаптивність для середніх пристроїв (>= 992px) [cite: 452] */
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .hero {
+        padding: 4rem 0;
+    }
+}
+
+/* Адаптивність для великих пристроїв (>= 1200px) [cite: 453] */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .display-4 {
+        font-size: 3.5rem;
+    }
+}
